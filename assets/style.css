@@ -1,10 +1,14 @@
 * {
-    background-color: #141a18;
+   
     color:#5a8176;
+    line-height: 1.3;
+
 }
 
 body {
+    height: 100%;
     margin: 0;
+    background-color: #141a18;
 }
 
 header {
@@ -12,26 +16,37 @@ header {
     height: 40px;
     width: 100%;
     margin: 0;
-    display: fixed;
+    display: flex;
+    justify-content: flex-end;
 
 }
 
 .menu-button {
-    display: inline-block;
-    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-inline-size: 40px;
+    margin-right: 10px;
+    
+}
+
+.menu-button:hover {
+    cursor:crosshair;
+    background-color: #5a8176;
 }
 
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
-    background-color: #33413c;
-    margin: 6px 0;
-    transition: 0.4s;
+    background-color:#a8e1d3;
+    margin: 3px 0;
 }
+
 
 hr {
     width: 70%;
     background-color:#a8e1d3;
+    margin: 40px;
 
 }
 
@@ -48,15 +63,24 @@ main {
 
 .home h1 {
     color: #a8e1d3;
+    font-size: 40px;
     text-align: left;
-    transition: font-size 120%;
+    transition-property: all;
+    transition-delay: 0.3s;
+    transition-duration: 0.5s;
 
+}
+
+.home h1:hover {
+    font-size: 45px;
 }
 
 .home p {
     color: #5a8176;
     text-align: left;
-
+    font-size: 20px;
+    margin-left: 25px;
+    margin-right: 30px;
 }
 
 .about {
@@ -71,7 +95,6 @@ main {
 
 .about h1 {
     color: #a8e1d3;
-
 }
 
 .about img {
