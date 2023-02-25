@@ -1,0 +1,55 @@
+* {
+    background-color: #141a18;
+    color:#5a8176;
+}
+
+hr {
+    width: 70%;
+    background-color:#a8e1d3;
+
+}
+
+.home {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+   
+}
+
+.home h1 {
+    color: #a8e1d3;
+    text-align: left;
+
+}
+
+.home p {
+    color: #5a8176;
+    text-align: left;
+
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+.about #about-h1, #about-p {
+    text-align: right;
+}
+
+.about h1 {
+    color: #a8e1d3;
+
+}
+
+.about img {
+    width: 40%;
+    height: 40%;
+    align-self: left;
+}
+
+section .projects {
+    display: flex;
+    justify-content: center;
+}
