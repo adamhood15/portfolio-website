@@ -3,178 +3,190 @@
     line-height: 1.3;
 }
 
-body {
-    height: 100%;
-    margin: 0;
-    background-color: #141a18;
-}
-
-header {
-    height: 50px;
-    width: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: flex-end;
-
-}
-
-section {
-    padding-top: 20px;
-}
-
-    .hamburger {
-        display: flex;
-        position: fixed;
-        flex-direction: column;
-        justify-content: center;
-        max-inline-size: 35px;
-        margin: 15px;
-        
+    body {
+        height: 100%;
+        margin: 0;
+        background-color: #141a18;
     }
 
-    .nav-menu {
-        opacity: 0;
-    }
+        header {
+            height: 50px;
+            width: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: flex-end;
 
-    .menu-button:focus {
-        background-color: #5a8176;
-    }
+        }
 
-    .bar1, .bar2, .bar3 {
-        width: 100%;
-        height: 5px;
-        background-color:#a8e1d3;
-        margin: 3px 0;
-        transition: 0.4s;
-    }
+        section {
+            padding-top: 20px;
+        }
 
-    
+            nav.hamburger {
+                display: flex;
+                position: fixed;
+                flex-direction: column;
+                justify-content: center;
+                max-inline-size: 35px;
+                margin: 15px;
+                
+            }
 
-main {
-    margin: 15px;
-}
+                .nav-menu {
+                    opacity: 0;
+                }
 
-hr {
-    width: 70%;
-    background-color:#a8e1d3;
-    margin: 40px;
+            .menu-button:focus {
+                background-color: #5a8176;
+            }
 
-}
+                .bar1, .bar2, .bar3 {
+                    width: 100%;
+                    height: 5px;
+                    background-color:#a8e1d3;
+                    margin: 3px 0;
+                    transition: 0.4s;
+                }
 
-h1 {
-    font-size: 35px;
-    text-align: center;
-    color:#a8e1d3;
-    margin: 20px;
-}
+            
 
-h2 {
-    margin: 20px;
-}
+        main {
+            margin: 15px;
+        }
 
-p {
-    margin: 20px;
-}
+            hr {
+                width: 70%;
+                background-color:#a8e1d3;
+                margin: 40px;
 
-.home {
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 50px;
-    margin: 0px;
-}
+            }
 
-.home h1 {
-    color: #a8e1d3;
-    font-size: 40px;
-    text-align: left;
-    transition-property: all;
-    transition-duration: 1s;
-    margin: 20px;
+            h1 {
+                font-size: 35px;
+                text-align: center;
+                color:#a8e1d3;
+                margin: 20px;
+            }
 
-}
+            h2 {
+                margin: 20px;
+            }
 
-.home h1:hover {
-    font-size: 45px;
-}
+            p {
+                margin: 20px;
+            }
 
-.home p {
-    color: #5a8176;
-    text-align: left;
-    font-size: 30px;
-    margin: 20px;
-    margin-left: 35px;
-    margin-right: 40px;
-}
+            section .home {
+                width: 100%;
+                padding-top: 10px;
+                padding-bottom: 50px;
+                margin: 0px;
+            }
 
-.about {
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
-}
+                .home h1 {
+                    color: #a8e1d3;
+                    font-size: 40px;
+                    text-align: left;
+                    transition-property: all;
+                    transition-duration: 1s;
+                    margin: 20px;
 
-.about #about-h1, #about-p {
-    text-align: right;
-}
+                }
 
-.about h1 {
-    color: #a8e1d3;
-    margin: 20px;
-    font-size: 35px;
-}
+                .home h1:hover {
+                    font-size: 45px;
+                }
 
-.about p {
-    margin: 20px;
-    font-size: 20px;
-}
+                .home p {
+                    color: #5a8176;
+                    text-align: left;
+                    font-size: 30px;
+                    margin: 20px;
+                    margin-left: 35px;
+                    margin-right: 40px;
+                }
 
-.about img {
-    width: 40%;
-    height: 40%;
-    align-self: center;
-    margin-top: 30px;
-    border: solid #a8e1d3;
-    border-radius: 10%;
-    box-shadow: 20px -10px #5a8176;
-}
+            section .about {
+                display: flex;
+                flex-direction: column;
+                justify-content: right;
+            }
 
-section .projects {
-    display: flex;
-    justify-content: center;
-    background-color: #5a8176;
-}
+                .about #about-h1, #about-p {
+                    text-align: right;
+                }
 
-.projects h2 {
-    color: #86a89f;
-}
+                .about h1 {
+                    color: #a8e1d3;
+                    margin: 20px;
+                    font-size: 35px;
+                }
 
-#project-1, #project-2, #project-3 {
-    max-height: 75px;
-    border: #a8e1d3 solid 1px;
-    border-radius: 25px;
-    margin-top: 30px;
-    margin-left: 15px;
-    margin-right: 15px;
-    box-shadow: 5px -10px #6c8f86;
-    display: flex;
-    flex-direction: column;
-    transition: all .7s ease-in;
+                .about p {
+                    margin: 20px;
+                    font-size: 20px;
+                }
 
-}
+                .about img {
+                    width: 40%;
+                    height: 40%;
+                    align-self: center;
+                    margin-top: 30px;
+                    border: solid #a8e1d3;
+                    border-radius: 10%;
+                    box-shadow: 20px -10px #5a8176;
+                }
 
-/* Set the opacity to 0 so that the transition would trigger */
-#p {
-    opacity: 0;
-    transition: all 0s .3s ease-out; 
-}
+            section .projects {
+                display: flex;
+                justify-content: center;
+                background-color: #5a8176;
+            }
 
-/* Sets hover affect for the text to pop in */
-#project-1:hover #p,#project-2:hover #p,#project-3:hover #p {
-   opacity: 1;
-}
+            .projects h2 {
+                color: #86a89f;
+            }
 
-/* Transition effect for the cards, cannot set height to fit-content
-it would not trigger the transition effects*/
-#project-1:hover, #project-2:hover, #project-3:hover {
-    max-height: 500px;
-}
+            #project-1, #project-2, #project-3 {
+                max-height: 75px;
+                border: #a8e1d3 solid 1px;
+                border-radius: 25px;
+                margin-top: 30px;
+                margin-left: 15px;
+                margin-right: 15px;
+                box-shadow: 5px -10px #6c8f86;
+                display: flex;
+                flex-direction: column;
+                transition: all .7s ease-in;
 
+            }
+
+            /* Set the opacity to 0 so that the transition would trigger */
+            #p {
+                opacity: 0;
+                transition: all 0s .3s ease-out; 
+            }
+
+            /* Sets hover affect for the text to pop in */
+            #project-1:hover #p,#project-2:hover #p,#project-3:hover #p {
+            opacity: 1;
+            }
+
+            /* Transition effect for the cards, cannot set height to fit-content
+            it would not trigger the transition effects*/
+            #project-1:hover, #project-2:hover, #project-3:hover {
+                max-height: 500px;
+            }
+
+            .contact p {
+                font-size: 25px;
+                color:#a8e1d3;
+                text-align: center;
+            }
+
+        @media screen and (min-width:600px) {
+            section.about {
+                display: flex;
+                flex-direction: row-reverse;
+            }
+            }
