@@ -13,23 +13,32 @@
 <body>
 
         <header class="header-container">
-            <div class="menu-button">
+            <nav class="hamburger">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
-            </div>
+                <nav class="nav-menu">
+                    <a href="#home-a">Home</a> 
+                    <a href="#about-a">About</a> 
+                    <a href="#projects-a">Projects</a> 
+                    <a href="#contact-a">Contact</a> 
+                </ul>
+            </nav>
         </header>
 
     <main>
         
-        <section class="home">
-            <h1>Hi, I'm Adam. Welcome to my portfolio</h1>
-            <p>I'm so excited to show you my work, let's go!</p>
+        <section class="home" id="home-a">
+            <h1>Hi, I'm Adam Welcome to my portfolio.</h1>
+            <p>I love designing responsive, creative, and intelligent websites.
+                Let me show you some of my work.
+            </p>
             <img href="">
-            <hr>
         </section>
 
-        <section class="about">
+        <hr>
+
+        <section class="about" id="about-a">
             
             <div class="about-text">
                 <h1 id="about-h1">About Me</h1>
@@ -38,10 +47,12 @@
                     a student at Rice University's Full Stack Coding Bootcamp and will be
                     getting my certificate at the end of June 2023. 
                     <br>
+                    <br>
                     My passion for web development started
                     in the Summer of 2022 when I decided to make my own video game. I jumped head first
                     into learning C# and after a full summer of learning I decided I wanted to switch careers
                     from teaching and go full time into web development.
+                    <br>
                     <br>
                     I'm experienced in HTML, CSS, C#, and JavaScript. I am an excellent communicator,
                     an extremely hard worker, and am eager to learn everything I can about web development. 
@@ -58,24 +69,26 @@
 
         </section>
 
-        <section class="projects">
+        <section class="projects" id="projects-a">
 
             <div class="project-card">
                 <h1>Projects</h1>
 
                 <div id="project-1">
                     <h2>Football Fanatics</h2>
-                    <p>A website for the Football Fanatics Podcast.</p>
+                    <p id="p">A website for the Football Fanatics Podcast.</p>
                 </div>
 
                 <div id="project-2">
                     <h2>Project 2</h2>
-                    <p>Input project information here.</p>
+                    <p id="p">Input project information here.</p>
                 </div>
                 
                 <div id="project-3">
                     <h2>Project 3</h2>
-                    <p>Input project information here.</p>
+                    <div class="p">
+                        <p id="p">Input project information here.</p>
+                    </div>
                 </div>
 
             </div>
@@ -84,7 +97,7 @@
 
         </section>
 
-        <section class="contact">
+        <section class="contact" id="contact-a">
             
             <h1>GET IN TOUCH</h1>
             <p>Email: </p>
