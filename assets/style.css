@@ -191,18 +191,28 @@
                 padding-bottom: 50px;
             }
 
-            .contact p {
-                font-size: 25px;
-                color:#a8e1d3;
-                text-align: center;
-            }
+           .contact-form {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            text-align: left;
+        }
+                .input {
+                    display:inline-block
+                }
 
-        footer {
+        .footer-container {
             display: flex;
             justify-content: center;
-            margin-bottom: 50px;
-            padding: 50px;
-            font-size: 150%;
+        }
+
+        .icon-container {
+            font-size: 20px;
+            width:100px;
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 80px;
         }
 
         @media screen and (min-width:600px) {
