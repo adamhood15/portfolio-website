@@ -1,5 +1,6 @@
 :root {
     --dark-grey: #343635; 
+    --light-grey: #575a58;
     --dark-green: #5a8176; 
     --light-green: #a8e1d3;
 }
@@ -33,37 +34,52 @@
             padding-top: 20px;
         }
 
-        nav {
-            display: flex;
-            flex-direction: column;
+        .sidenav {
+            height: 100%;
+            width: 0;
             position: fixed;
-            align-items: flex-end;
-            margin: 15px 15px 0px 0px;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            background-color: black;
+            overflow-x: hidden;
+        }
+
+        .sidenav a {
+            text-decoration: none;
+            display: block;
+            margin: 20%;
+            text-align: center;
 
         }
 
-            .hamburger {
-                height: 35px;
-                width: 35px; 
+   
+
+            .openSidenav {
+                font-size: 45px;
+                margin: 10px 20px;
+                color: var(--light-green);
+                position: fixed;
             }
 
-                .bar1, .bar2, .bar3 {
-                    width: 100%;
-                    height: 5px;
-                    background-color: var(--light-green);
-                    margin: 5px 0;
-                    transition: 0.4s;
-                }
-
-            .nav-menu {
-                display: none;
-                list-style: none;
-                text-align: right;
-                margin: 5px;
+            .closebtn {
+                font-size: 45px;
+                color: var(--light-green);
             }
-                ul.nav-menu a:link {
-                    text-decoration: none;
-                }
+            
+
+            header li:hover {
+                border-width: 2px;
+            }
+
+            header li {
+                display: inline;
+                font-size: 100%;
+                margin: 20px;
+                border-bottom: var(--light-green) solid 0px;
+                transition: border-width 0.2s linear;
+               
+            }
             
 
         main {
@@ -117,9 +133,21 @@
                     color: var(--dark-green);
                     text-align: left;
                     font-size: 30px;
-                    margin: 20px;
+                    padding-right: 10%;
+                    padding-left: 10%;
+                    padding-bottom: 10%;
                     margin-left: 35px;
                     margin-right: 40px;
+                }
+
+                .home img {
+                    background-color: var(--dark-grey);
+                    border: solid 2px var(--light-green);
+                    border-radius: 10%;
+                    height: 60%;
+                    width: 60%;
+                    display: inline-block;
+                    position: relative;
                 }
 
             section.about {
@@ -166,7 +194,7 @@
                 }
 
                 #project-1, #project-2, #project-3 {
-                    max-height: 75px;
+                    max-height: 100px;
                     border: var(--light-green) solid 1px;
                     border-radius: 25px;
                     margin-top: 30px;
@@ -219,10 +247,13 @@
 
                 }
                 
-                input {
+                .input, .message-input{
                     background-color: var(--dark-grey);
-                    color: var(--light-green)
+                    color: var(--light-green);
+                    width: 100%;
+                    margin: 5px;
                 }
+
 
                 .message-input {
                     height: 100px;
@@ -230,6 +261,8 @@
 
                 .submit-button {
                   align-self: center;
+                  background-color: var(--light-grey);
+                  color: var(--light-green);
                 }
             
 
@@ -247,8 +280,29 @@
         }
 
         @media screen and (min-width:600px) {
+        
+
             section.about {
                 display: flex;
                 flex-direction: row-reverse;
             }
+
+            label {
+                margin-right: 50px;
+            }
+
+            }
+
+            @media screen and (min-width: 1000px) {
+                .about-text {
+                    margin: 5%;
+                }
+
+                #about-h1 {
+                    font-size: 45px;
+                }
+
+                #about-p {
+                    font-size: 22px;
+                }
             }

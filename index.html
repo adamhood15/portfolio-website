@@ -9,40 +9,46 @@
     <script src="https://kit.fontawesome.com/68cdc6aedc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/style.css">
     <title>Adam Hood</title>
+
+    <script>
+        function openNav() {
+            document.getElementById('mySideNav').style.width = "100px";
+            document.getElementById('main').style.marginRight = "100px";
+        }
+
+        function closeNav() {
+            document.getElementById('mySideNav').style.width = "0px";
+            document.getElementById('main').style.marginRight = "0px";
+        }
+    </script>
 </head>
 
 <body>
 
         <header class="header-container">
 
+            <span class="openSidenav" onclick="openNav()">☰</span>
+            
 
-            <nav class="nav-container">
-                <div class="hamburger">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>
-
-                <div class="menu-container">
-                    <ul class="nav-menu">
-                        <li><a href="#home-a">Home</a></li>
-                        <li><a href="#about-a">About</a></li>
-                        <li><a href="#projects-a">Projects</a></li>
-                        <li><a href="#contact-a">Contact</a></li>
-                    </ul>
+            <nav id="mySideNav" class="sidenav">
+                    <a class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#home-a">Home</a>
+                    <a href="#about-a">About</a>
+                    <a href="#projects-a">Projects</a>
+                    <a href="#contact-a">Contact</a>
                 </div>
             </nav>
+           
         
         </header>
 
     <main>
-        
+       <div id="main">
         <section class="home" id="home-a">
-            <h1>Hi, I'm Adam Welcome to my portfolio.</h1>
+            <h1>Hi, I'm Adam <br> Welcome to my portfolio.</h1>
             <p>I love designing responsive, creative, and intelligent websites.
                 Let me show you some of my work.
             </p>
-            <img href="">
         </section>
 
         <hr>
@@ -52,7 +58,7 @@
             <div class="about-text">
                 <h1 id="about-h1">About Me</h1>
                 <p id="about-p">
-                    Hey there! My name is Adam and I am a Full Stack Web Developer. I am currently
+                    Hey there! My name is Adam Hood and I am a Full Stack Web Developer. I am currently
                     a student at Rice University's Full Stack Coding Bootcamp and will be
                     getting my certificate at the end of June 2023. 
                     <br>
@@ -119,17 +125,17 @@
                     <h1>Contact </h1>
 
                     <div class="contact-row">
-                        <label for="yourname">Your Name: </label>
+                        <label for="yourname">Name: </label>
                         <input class="input" type="text">
                     </div>
 
                     <div class="contact-row">
-                        <label for="youremail">Your Email: </label>
+                        <label for="youremail">Email: </label>
                         <input class="input" type="text">
                     </div>
 
                     <div class="contact-row">
-                        <label for="message">Your Message: </label>
+                        <label for="message">Message: </label>
                         <input class="message-input" type="text">
                     </div>
 
@@ -150,6 +156,10 @@
             <a href="mailto:adamhood15@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i>
         </div>
     </footer>
+
+</div> 
+
+    <script href="./script.js"></script>
     
 </body>
 </html>
