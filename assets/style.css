@@ -3,6 +3,10 @@
     --light-grey: #575a58;
     --dark-green: #5a8176; 
     --light-green: #a8e1d3;
+    --image-border: solid 2px #a8e1d3;
+    --box-shadow: 10px 5px;
+    --border-radius: 10%;
+    --box-shadow: 15px -10px;
 }
 
 * {
@@ -53,8 +57,6 @@
 
         }
 
-   
-
             .openSidenav {
                 font-size: 45px;
                 margin: 10px 20px;
@@ -65,6 +67,14 @@
             .closebtn {
                 font-size: 45px;
                 color: var(--light-green);
+            }
+
+            .openSidenav:hover {
+                cursor: pointer;
+            }
+
+            .closebtn:hover {
+                cursor: pointer;
             }
             
 
@@ -94,13 +104,13 @@
             }
 
             h1 {
-                font-size: 35px;
+                font-size: 40px;
                 text-align: center;
                 color: var(--light-green);
-                margin: 20px;
+                margin: 20px 20px 50px 20px;
             }
 
-            h2 {
+            h2, h3 {
                 margin: 20px;
             }
 
@@ -133,21 +143,8 @@
                     color: var(--dark-green);
                     text-align: left;
                     font-size: 30px;
-                    padding-right: 10%;
-                    padding-left: 10%;
-                    padding-bottom: 10%;
-                    margin-left: 35px;
-                    margin-right: 40px;
-                }
-
-                .home img {
-                    background-color: var(--dark-grey);
-                    border: solid 2px var(--light-green);
-                    border-radius: 10%;
-                    height: 60%;
-                    width: 60%;
-                    display: inline-block;
-                    position: relative;
+                    padding: 0 10% 10% 10%;
+                    margin: 0px 40px 35px 0px;
                 }
 
             section.about {
@@ -176,63 +173,71 @@
                     height: 40%;
                     align-self: center;
                     margin: 30px;
-                    border: solid var(--light-green);
-                    border-radius: 10%;
+                    border: var(--image-border);
+                    border-radius: var(--border-radius);
                     box-shadow: 20px -10px #5a8176;
                 }
 
             section.projects {
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
+        
                 padding-top: 50px;
                 padding-bottom: 60px;
             }
 
                 .projects h2 {
-                    color: var(--dark-green);
+                    font-size: 30px;
+                }
+
+                .projects p {
+                    font-size: 18px;
+                }
+                #project-1 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: left;
+                }
+
+                #project-1 img {
+                    align-self: center;
+                    height: 50%;
+                    width: 50%;
+                    border: var(--image-border);
+                    border-radius: var(--border-radius);
+                    box-shadow: var(--box-shadow);
+                    margin: 25px;
+
+                  
+                }
+
+                .secondary-projects {
+                    display: flex;
+
+                }
+
+                #project-2, #project-3 {
+                    display:inline-block;
+                    width: 50%;
                 }
 
                 #project-1, #project-2, #project-3 {
-                    max-height: 100px;
                     border: var(--light-green) solid 1px;
                     border-radius: 25px;
-                    margin-top: 30px;
-                    margin-left: 15px;
-                    margin-right: 15px;
+                    margin: 30px 15px 0px 15px;
                     box-shadow: 5px -10px #6c8f86;
-                    display: flex;
-                    flex-direction: column;
                     transition: all .7s ease-in;
                 }
 
-                    /* Set the opacity to 0 so that the transition would trigger */
-                    #p {
-                        opacity: 0;
-                        transition: all 0s .3s ease-out; 
-                    }
-
-                    /* Sets hover affect for the text to pop in */
-                    #project-1:hover #p,#project-2:hover #p,#project-3:hover #p {
-                    opacity: 1;
-                    }
-
-                    /* Transition effect for the cards, cannot set height to fit-content
-                    it would not trigger the transition effects*/
-                    #project-1:hover, #project-2:hover, #project-3:hover {
-                        max-height: 500px;
-                    }
+                 
 
             section.contact {
-                padding-top: 50px;
-                padding-bottom: 50px;
+                padding: 50px 0px 50px 0px;
             }
 
             .contact-form {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
-                border: 2px solid var(--light-green);
+                border: var(--image-border);
                 border-radius: 20px;
                 box-shadow: 10px -5px #6c8f86;
                 margin-right: 5px;
@@ -285,6 +290,20 @@
             section.about {
                 display: flex;
                 flex-direction: row-reverse;
+            }
+
+            #project-1 {
+                display: flex;
+                flex-direction: row;
+            }
+
+            #project-1 img {
+                margin: 40px;
+            }
+
+            .project-1-text {
+                display: block;
+
             }
 
             label {
