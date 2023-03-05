@@ -25,7 +25,8 @@
 
         <header class="header-container">
 
-            <span class="openSidenav" onclick="openNav()">☰</span>
+            <!-- Navigation Buttons -->
+            <nav class="openSidenav" onclick="openNav()">☰</nav>
             
 
             <nav id="mySideNav" class="sidenav">
@@ -49,7 +50,7 @@
             </p>
         </section>
 
-        <hr>
+        <hr class="home-hr">
 
         <section class="about" id="about-a">
             
@@ -79,6 +80,9 @@
 
                 </div>
             </div>
+
+            <!-- Had to keep the image separate from the text to get the 
+            look that I was wanting for wider screens. -->
             <img src="./assets/images/Wedding Photo.jpeg" alt="picture of adam in suite and tie">
 
 
@@ -91,8 +95,9 @@
         <section class="projects" id="projects-a">
 
             <div class="project-card">
-                <h1>Projects</h1>
+                <h1 class="projects-h1">Projects</h1>
 
+                <!-- Can add images and links to a tags when ready -->
                 <div id="project-1">
                     <div class="project-1-text">
                         <h2>Football Fanatics</h2>
@@ -104,13 +109,15 @@
                         </p>
                     </div>
 
-                    <a href="link address"><img src="./assets/images/football-fanatics-small.png"
+                    <a href="https://adamhood15.github.io/football-fanatics/"><img src="./assets/images/football-fanatics-small.png"
                     alt="football fanatics website"
                     ></a>
 
 
                 </div>
 
+                <!-- Secondary projects are inside one container so that
+                they appear smaller than the first project -->
                 <div class="secondary-projects">
                     <div id="project-2">
                         <h3>Project 2</h3>
@@ -138,9 +145,10 @@
         <section class="contact" id="contact-a">
 
             <form class="contact-form">
-
+                    <!--I created lots of containers so that I could control
+                    the spacing with flexbox -->
                     <div class="h1-container">
-                        <h1>Contact </h1>
+                        <h1 class="contact-h1">Contact </h1>
                     </div>
 
                     <div class="contact-row">
@@ -159,7 +167,7 @@
                     </div>
 
                     <div class="contact-row">
-                        <input class="submit-button" type="submit" placeholder="Message...">
+                        <input class="submit-button" type="submit" value="Send">
                     </div>
 
             </form>
@@ -170,8 +178,8 @@
 
     <footer class="footer-container">
         
+        <!-- All of my contact information is displayed in these links -->
         <div class="icon-container">
-            <h4>Get in Touch: </h4>
             <a href="https://www.linkedin.com/in/adam-c-hood/" target="_blank"><i class="fa-brands fa-linkedin-in"></i>
             <a href="https://github.com/adamhood15" target="_blank"><i class="fa-brands fa-github"></i>
             <a href="https://twitter.com/AdamHood171992" target="_blank"><i class="fa-brands fa-twitter"></i>
