@@ -13,12 +13,10 @@
     <script>
         function openNav() {
             document.getElementById('mySideNav').style.width = "100px";
-            document.getElementById('main').style.marginRight = "100px";
         }
 
         function closeNav() {
             document.getElementById('mySideNav').style.width = "0px";
-            document.getElementById('main').style.marginRight = "0px";
         }
     </script>
 </head>
@@ -55,30 +53,31 @@
 
         <section class="about" id="about-a">
             
-            <div class="about-text">
-                <h1 id="about-h1">About Me</h1>
-                <p id="about-p">
-                    Hey there! My name is Adam Hood and I am a Full Stack Web Developer. I am currently
-                    a student at Rice University's Full Stack Coding Bootcamp and will be
-                    getting my certificate at the end of June 2023. 
-                    <br>
-                    <br>
-                    My passion for web development started
-                    in the Summer of 2022 when I decided to make my own video game. I jumped head first
-                    into learning C# and after a full summer of learning I decided I wanted to switch careers
-                    from teaching and go full time into web development.
-                    <br>
-                    <br>
-                    I'm experienced in HTML, CSS, C#, and JavaScript. I am an excellent communicator,
-                    an extremely hard worker, and am eager to learn everything I can about web development. 
-                    Come and take a look at all the great work I've done!
-                </p>
+            <div class="about-card">
+                <div class="about-text">
+                    <h1 id="about-h1">About Me</h1>
+                    <p id="about-p">
+                        Hey there! My name is Adam Hood and I am a Full Stack Web Developer. I am currently
+                        a student at Rice University's Full Stack Coding Bootcamp and will be
+                        getting my certificate at the end of June 2023. 
+                        <br>
+                        <br>
+                        My passion for web development started
+                        in the Summer of 2022 when I decided to make my own video game. I jumped head first
+                        into learning C# and after a full summer of learning I decided I wanted to switch careers
+                        from teaching and go full time into web development.
+                        <br>
+                        <br>
+                        I'm experienced in HTML, CSS, C#, and JavaScript. I am an excellent communicator,
+                        an extremely hard worker, and am eager to learn everything I can about web development. 
+                        Come and take a look at all the great work I've done!
+                    </p>
 
-                <p>
-                    
-                </p>
+                    <p>
+                        
+                    </p>
 
-
+                </div>
             </div>
             <img src="./assets/images/Wedding Photo.jpeg" alt="picture of adam in suite and tie">
 
@@ -140,26 +139,28 @@
 
             <form class="contact-form">
 
-
-                    <h1>Contact </h1>
+                    <div class="h1-container">
+                        <h1>Contact </h1>
+                    </div>
 
                     <div class="contact-row">
-                        <label for="yourname">Name: </label>
+                        <p>Name: </p>
                         <input class="input" type="text">
                     </div>
 
                     <div class="contact-row">
-                        <label for="youremail">Email: </label>
+                        <p>Email: </p>
                         <input class="input" type="text">
                     </div>
 
                     <div class="contact-row">
-                        <label for="message">Message: </label>
+                        <p>Message: </p>
                         <input class="message-input" type="text">
                     </div>
 
-                    <input class="submit-button" type="submit">
-
+                    <div class="contact-row">
+                        <input class="submit-button" type="submit" placeholder="Message...">
+                    </div>
 
             </form>
 
