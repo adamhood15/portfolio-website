@@ -233,10 +233,11 @@ section.about  {
                 .secondary-projects {
                     align-items: center;
                     display: flex;
-                    max-height: 50rem;
+                    min-height: fit-content;
                 }
 
                 #project-2, #project-3 {
+                    flex: 1;
                     height: 100%;
                     width: 90%;
                 }
@@ -390,10 +391,14 @@ section.about  {
                 }
 
                 .secondary-projects {
+                    display: flex;
                     flex-direction: row;
                 }
 
                 #project-2, #project-3 {
+                    flex: 1;
+                    height: 100%;
+                    width: 100%;
                     padding: 20px;
                 }
 
