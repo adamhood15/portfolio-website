@@ -147,7 +147,7 @@
 
         <section class="contact" id="contact-a">
 
-            <form class="contact-form">
+            <form class="contact-form" action="https://formsubmit.co/f217d247b3456a42da00ad3d935aaacd" method="POST">
                     <!--I created lots of containers so that I could control
                     the spacing with flexbox -->
                     <div class="h1-container">
@@ -156,12 +156,12 @@
 
                     <div class="contact-row">
                         <p>Name: </p>
-                        <input class="input" type="text">
+                        <input class="input" type="text" name="name" required>
                     </div>
 
                     <div class="contact-row">
                         <p>Email: </p>
-                        <input class="input" type="text">
+                        <input class="input" type="text" name="email" required>
                     </div>
 
                     <div class="contact-row">
@@ -170,8 +170,11 @@
                     </div>
 
                     <div class="contact-row">
-                        <input class="submit-button" type="submit" value="Send">
+                       <button class="submit-button" type="submit" value="Send">Send</button>
+
                     </div>
+
+                    <input type="hidden" name="_next" value="https://adamhood15.github.io/thankyou.html">
 
             </form>
 

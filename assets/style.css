@@ -161,11 +161,7 @@ section.about  {
                     box-shadow: 20px -10px var(--dark-green);
                 }
 
-            .project-card {
-                display: flex;
-                flex-direction: column;
-        
-            }
+           
 
             .projects {
                 align-items: center;
@@ -212,8 +208,8 @@ section.about  {
 
                 #project-1 img {
                     align-self: center;
-                    height: 50%;
-                    width: 50%;
+                    height: 30%;
+                    width: 30%;
                     border: var(--image-border);
                     border-radius: var(--border-radius);
                     box-shadow: var(--box-shadow);
@@ -237,7 +233,7 @@ section.about  {
                 }
 
                 #project-2, #project-3 {
-                    flex: 1;
+                
                     height: 100%;
                     width: 90%;
                 }
@@ -374,6 +370,12 @@ section.about  {
             }
 
             @media screen and (min-width: 800px) {
+
+                .project-card {
+                    display: flex;
+                    flex-direction: column;
+                }
+
                 .projects {
                     margin: 150px 0px 150px 0px;
                 }
@@ -393,6 +395,13 @@ section.about  {
                 .secondary-projects {
                     display: flex;
                     flex-direction: row;
+                    flex-basis: 0;
+                    flex-grow: 1;
+
+                }
+
+                #project-3 p, #project-2 p {
+                    font-size: 20px;
                 }
 
                 #project-2, #project-3 {
