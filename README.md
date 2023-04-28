@@ -12,7 +12,7 @@ Go to the following URL to view the live site https://adamhood15.github.io/portf
 ![portfolio screenshot](./assets/images/website-screenshot.jpeg)
 
 ## Credits
-I am the sole collaborator on this project. Link icons at the bottom of the footer were downloaded from Font Awesome.
+The JavaScript code at the top of the HTML was sourced from W3 Schools. All other code was written by myself. Link icons at the bottom of the footer were downloaded from Font Awesome.
 
 ## License
 Please refer to the license in the repo.

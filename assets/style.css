@@ -161,8 +161,15 @@ section.about  {
                     box-shadow: 20px -10px var(--dark-green);
                 }
 
+            .project-card {
+                display: flex;
+                flex-direction: column;
+        
+            }
+
             .projects {
                 align-items: center;
+                height: fit-content;
             }
 
             #project-1, #project-2, #project-3 {
@@ -170,6 +177,10 @@ section.about  {
                 border-radius: 25px;
                 box-shadow: 5px -10px var(--dark-green);
                 margin: 40px 20px;
+            }
+
+            #project-2, #project-3 {
+                height: fit-content;
             }
 
             /* Nested the image inside the anchor tag so that
@@ -201,8 +212,14 @@ section.about  {
 
                 #project-1 img {
                     align-self: center;
-                    height: 75%;
-                    width: 75%;
+                    height: 50%;
+                    width: 50%;
+                    border: var(--image-border);
+                    border-radius: var(--border-radius);
+                    box-shadow: var(--box-shadow);
+                }
+
+                .project-images {
                     border: var(--image-border);
                     border-radius: var(--border-radius);
                     box-shadow: var(--box-shadow);
@@ -215,9 +232,12 @@ section.about  {
 
                 .secondary-projects {
                     align-items: center;
+                    display: flex;
+                    max-height: 50rem;
                 }
 
                 #project-2, #project-3 {
+                    height: 100%;
                     width: 90%;
                 }
 
