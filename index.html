@@ -127,9 +127,11 @@
 
                     <div id="project-3">
                         <h3>README Generator</h3>
-                        <p id="p">Coming Soon!
+                        <p id="p">The README Generator is a backend project developed with Node.js. It asks a few questions about your project
+                             and what you would like to include in your README. Then it dynamically creates a README for you to instantly use 
+                             for your project. 
                         </p>
-                        <a href="https://adamhood15.github.io/readme-generator/"><img class="project-images" src="./assets/images/placeholder.png"
+                        <a href="https://adamhood15.github.io/readme-generator/"><img class="project-images" src="./assets/images/README-generator.png"
                             alt="README Generator Application"
                             ></a>
                     </div>
@@ -145,7 +147,7 @@
 
         <section class="contact" id="contact-a">
 
-            <form class="contact-form">
+            <form class="contact-form" action="https://formsubmit.co/f217d247b3456a42da00ad3d935aaacd" method="POST">
                     <!--I created lots of containers so that I could control
                     the spacing with flexbox -->
                     <div class="h1-container">
@@ -154,12 +156,12 @@
 
                     <div class="contact-row">
                         <p>Name: </p>
-                        <input class="input" type="text">
+                        <input class="input" type="text" name="name" required>
                     </div>
 
                     <div class="contact-row">
                         <p>Email: </p>
-                        <input class="input" type="text">
+                        <input class="input" type="text" name="email" required>
                     </div>
 
                     <div class="contact-row">
@@ -168,8 +170,11 @@
                     </div>
 
                     <div class="contact-row">
-                        <input class="submit-button" type="submit" value="Send">
+                       <button class="submit-button" type="submit" value="Send">Send</button>
+
                     </div>
+
+                    <input type="hidden" name="_next" value="https://adamhood15.github.io/thankyou.html">
 
             </form>
 
