@@ -99,9 +99,15 @@ section.about  {
             }
 
             h1 {
-                font-size: 40px;
+                font-size: 30px;
+                font-weight: bold;
                 color: var(--light-green);
                 margin: 20px 20px 50px 20px;
+            }
+
+            h2, h3 {
+                color: var(--light-green);
+                font-weight: bold;
             }
 
             h2, h3, p {
@@ -137,11 +143,11 @@ section.about  {
                 align-items: right;
             }
 
-                .about #about-h1, #about-p {
+                .about #about-h2, #about-p {
                     text-align: right;
                 }
 
-                .about h1 {
+                .about h2 {
                     margin: 20px;
                     font-size: 35px;
                 }
@@ -167,6 +173,7 @@ section.about  {
                 align-items: center;
                 height: fit-content;
             }
+            
 
             #project-1, #project-2, #project-3 {
                 border: var(--smoke) solid 2px;
@@ -187,7 +194,7 @@ section.about  {
                 margin: 25px;
             }
 
-            .projects h2 {
+            .projects h2, h3 {
                 font-size: 30px;
             }
 
@@ -230,6 +237,7 @@ section.about  {
                     align-items: center;
                     display: flex;
                     min-height: fit-content;
+                    margin: 2rem;
                 }
 
                 #project-2, #project-3 {
@@ -255,7 +263,7 @@ section.about  {
                     font-size: 20px;
                 }
 
-                .h1-container {
+                .h2-container {
                     text-align: left;
                     align-self: flex-start;
                     background-color: #343635;
@@ -264,7 +272,7 @@ section.about  {
                     border-radius: 10px;
                 }
 
-                .h1-container h1 {
+                .h2-container h2 {
                     margin: 0px;
                     padding: 5px;
                     font-size: 35px;
@@ -426,7 +434,7 @@ section.about  {
                     margin: 5%;
                 }
 
-                #about-h1 {
+                #about-h2 {
                     font-size: 45px;
                 }
 
@@ -434,7 +442,7 @@ section.about  {
                     font-size: 22px;
                 }
                 
-                .projects-h1 {
+                .projects-h2 {
                     font-size: 55px;
                     margin-bottom: 100px;
                 }

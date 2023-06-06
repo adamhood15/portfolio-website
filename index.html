@@ -38,7 +38,7 @@
     <main>
        <div id="main">
         <section class="home" id="home-a">
-            <h1>Hi, I'm Adam <br> Welcome to my portfolio.</h1>
+            <h1 class="text-4xl">Hi, I'm Adam <br> Welcome to my portfolio.</h1>
             <p>I love designing responsive, creative, and intelligent web applications.
                 Let me show you some of my work.
             </p>
@@ -49,7 +49,7 @@
         <section class="about" id="about-a">
             <div class="about-card">
                 <div class="about-text">
-                    <h1 id="about-h1">About Me</h1>
+                    <h2 id="about-h2">About Me</h2>
                     <p id="about-p">
                         Hey there! My name is Adam Hood and I am a Full Stack Web Developer. I am currently
                         a student at Rice University's Full Stack Coding Bootcamp and will be
@@ -79,7 +79,7 @@
         <!-- Project Section -->
         <section class="projects" id="projects-a">
             <div class="project-card">
-                <h1 class="projects-h1">Projects</h1>
+                <h2 class="projects-h2">Projects</h2>
                 <!-- Can add images and links to a tags when ready -->
                 <div id="project-1">
                     <div class="project-1-text">
@@ -118,6 +118,27 @@
                             alt="Web application for movie match maker"></a>
                     </div> 
                 </div>
+                <div class="secondary-projects">
+                    <div id="project-2">
+                        <h3>Tech Blog</h3>
+                            <p id="p"> This tech-blog application is a full stack web application that allows users to create blog posts, 
+                                share them to the homepage, comment on other posts, and create a user account. It was incredibly challenging 
+                                as this was my first full stack application with this much functionality but I am very proud of the work that I did.   
+                            </p>
+                            <a href="https://immense-atoll-71315.herokuapp.com/"><img class="project-images" src="./assets/images/Tech-Blog.png"
+                                alt="tech blog application website"
+                                ></a>
+                    </div>
+                    <div id="project-3">
+                        <h3>E-Commerce Database</h3>
+                        <p id="p">This E-Commerce application is the backend framework for an e-commerce website. My task was to take 
+                            this backend application and configuring it to use Sequelize. I was responsible for building all of the Models, 
+                            Routes, and connectivity to Sequelize.
+                        </p>
+                        <a href="https://github.com/adamhood15/e-commerce-back-end"><img class="project-images" src="./assets/images/e-commerce.png"
+                            alt="Web application for E-Commerce Database"></a>
+                    </div> 
+                </div>
             </div>
         </section>
 
@@ -127,8 +148,8 @@
             <form class="contact-form" action="https://formsubmit.co/f217d247b3456a42da00ad3d935aaacd" method="POST">
                     <!--I created lots of containers so that I could control
                     the spacing with flexbox -->
-                    <div class="h1-container">
-                        <h1 class="contact-h1">Contact </h1>
+                    <div class="h2-container">
+                        <h2 class="contact-h2">Contact </h2>
                     </div>
                     <div class="contact-row">
                         <p>Name: </p>
