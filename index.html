@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./assets/reset.css" rel="reset-css">
     <script src="https://kit.fontawesome.com/68cdc6aedc.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/style.css">
     <title>Adam Hood</title>
 
@@ -22,13 +23,9 @@
 </head>
 
 <body>
-
         <header class="header-container">
-
             <!-- Navigation Buttons -->
             <nav class="openSidenav" onclick="openNav()">☰</nav>
-            
-
             <nav id="mySideNav" class="sidenav">
                     <a class="closebtn" onclick="closeNav()">&times;</a>
                     <a href="#home-a">Home</a>
@@ -37,8 +34,6 @@
                     <a href="#contact-a">Contact</a>
                 </div>
             </nav>
-           
-        
         </header>
 
     <main>
@@ -53,14 +48,13 @@
         <hr class="home-hr">
 
         <section class="about" id="about-a">
-            
             <div class="about-card">
                 <div class="about-text">
                     <h1 id="about-h1">About Me</h1>
                     <p id="about-p">
                         Hey there! My name is Adam Hood and I am a Full Stack Web Developer. I am currently
                         a student at Rice University's Full Stack Coding Bootcamp and will be
-                        getting my certificate at the end of June 2023. 
+                        earning my certificate at the beginning of August 2023. 
                         <br>
                         <br>
                         My passion for web development started
@@ -69,31 +63,24 @@
                         from teaching and go full time into web development.
                         <br>
                         <br>
-                        I'm experienced in HTML, CSS, C#, and JavaScript. I am an excellent communicator,
+                        I'm experienced in HTML, CSS, C#, and JavaScript. I've also built multiple full stack web
+                        applications incorporating Node.js, MySQL, Sequelize, and building those applications using 
+                        a Model View Controller architecture. I am an excellent communicator,
                         an extremely hard worker, and am eager to learn everything I can about web development. 
                         Come and take a look at all the great work I've done!
                     </p>
-
-                    <p>
-                        
-                    </p>
-
                 </div>
             </div>
-
             <!-- Had to keep the image separate from the text to get the 
             look that I was wanting for wider screens. -->
             <img src="./assets/images/Wedding Photo.jpeg" alt="picture of adam in suite and tie">
-
         </section>
 
         <hr>
-
+        <!-- Project Section -->
         <section class="projects" id="projects-a">
-
             <div class="project-card">
                 <h1 class="projects-h1">Projects</h1>
-
                 <!-- Can add images and links to a tags when ready -->
                 <div id="project-1">
                     <div class="project-1-text">
@@ -108,10 +95,7 @@
                             alt="Web application for movie match maker"
                             ></a>
                     </div>
-
-
                 </div>
-
                 <!-- Secondary projects are inside one container so that
                 they appear smaller than the first project -->
                 <div class="secondary-projects">
@@ -125,80 +109,59 @@
                                 alt="weather dashboard application website"
                                 ></a>
                     </div>
-
                     <div id="project-3">
                         <h3>Meal Match</h3>
                         <p id="p">Forget everything you know about Meal Planning. Gone are the days of spending the bulk of your Sunday 
                             afternoon trying to figure out what your family wants to eat. No more wasting time putting together a grocery 
-                            list of all the ingredients you need for each recipe. Let us help you take back your time and never look back.
-                             
+                            list of all the ingredients you need for each recipe. Let us help you take back your time and never look back.     
                         </p>
                         <a href="https://young-gorge-82099.herokuapp.com/"><img class="project-images" src="./assets/images/Meal-Match.png"
-                            alt="Meal Match Application"
-
-                            ></a>
-                    </div>
-                    
-                    
+                            alt="Meal Match Application"></a>
+                    </div> 
                 </div>
-
             </div>
-
         </section>
 
         <hr>
 
         <section class="contact" id="contact-a">
-
             <form class="contact-form" action="https://formsubmit.co/f217d247b3456a42da00ad3d935aaacd" method="POST">
                     <!--I created lots of containers so that I could control
                     the spacing with flexbox -->
                     <div class="h1-container">
                         <h1 class="contact-h1">Contact </h1>
                     </div>
-
                     <div class="contact-row">
                         <p>Name: </p>
                         <input class="input" type="text" name="name" required>
                     </div>
-
                     <div class="contact-row">
                         <p>Email: </p>
                         <input class="input" type="text" name="email" required>
                     </div>
-
                     <div class="contact-row">
                         <p>Message: </p>
                         <input class="message-input" type="text">
                     </div>
-
                     <div class="contact-row">
                        <button class="submit-button" type="submit" value="Send">Send</button>
-
                     </div>
-
                     <input type="hidden" name="_next" value="https://adamhood15.github.io/thankyou.html">
-
             </form>
-
         </section>
-
     </main>
 
     <footer class="footer-container">
-        
         <!-- All of my contact information is displayed in these links -->
         <div class="icon-container">
             <a href="https://www.linkedin.com/in/adam-c-hood/" target="_blank"><i class="fa-brands fa-linkedin-in"></i>
             <a href="https://github.com/adamhood15" target="_blank"><i class="fa-brands fa-github"></i>
             <a href="https://twitter.com/AdamHood171992" target="_blank"><i class="fa-brands fa-twitter"></i>
-            <a href="mailto:adamhood15@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i>
+            <a href="mailto:adamhood3700@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i>
         </div>
     </footer>
 
 </div> 
-
-    <script href="./script.js"></script>
-    
+    <script href="./script.js"></script> 
 </body>
 </html>
