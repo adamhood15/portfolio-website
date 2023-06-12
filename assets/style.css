@@ -18,7 +18,7 @@
 
 .projects, .projects a, #project-1, .secondary-projects, 
 .contact, .contact-form, .footer-container, .icon-container, 
-section.about, header {
+section.about, header, .wrapper {
     display: flex;
 }
 
@@ -26,6 +26,43 @@ section.about, header {
 section.about  {
     flex-direction: column;
 }
+
+.wrapper {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.hr {
+    background-color: var(--dark-green);
+    height: 1px;
+    border: none;
+}
+
+.main, .sidebar {
+    background-color: var(--dark-grey);
+}
+
+.main {
+    width: 97%;
+    height: 100%;
+  }
+  
+  .sidebar {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 3%;
+    height: 90vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+
+  .icon {
+    font-size: 25px;
+  }
 
     body {
         height: 100%;
@@ -167,7 +204,9 @@ section.about  {
                     box-shadow: 20px -10px var(--dark-green);
                 }
 
-           
+                #project-title {
+                    font-size: 40px;
+                }
 
             .projects {
                 align-items: center;
@@ -176,6 +215,9 @@ section.about  {
             
 
             #project-1, #project-2, #project-3 {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
                 border: var(--smoke) solid 2px;
                 border-radius: 25px;
                 box-shadow: 5px -10px var(--dark-green);
@@ -215,8 +257,8 @@ section.about  {
 
                 #project-1 img {
                     align-self: center;
-                    height: 30%;
-                    width: 30%;
+                    height: 70%;
+                    width: 70%;
                     border: var(--image-border);
                     border-radius: var(--border-radius);
                     box-shadow: var(--box-shadow);
@@ -229,8 +271,9 @@ section.about  {
                 }
 
                 .secondary-projects img {
-                    height: 50%;
-                    width: 50%;
+                    height: 70%;
+                    width: 70%;
+                    flex-grow: 1;
                 }
 
                 .secondary-projects {
@@ -416,7 +459,7 @@ section.about  {
                     flex: 1;
                     height: 100%;
                     width: 100%;
-                    padding: 20px;
+                    /* padding: 20px; */
                 }
 
                 /* Must set height and width to less than 100% 
@@ -430,6 +473,11 @@ section.about  {
             }
 
             @media screen and (min-width: 1000px) {
+
+                h1 {
+                    font-size: 40px;
+                }
+
                 .about-text {
                     margin: 5%;
                 }
@@ -473,8 +521,8 @@ section.about  {
                 }
                 
                 .project-card {
-                    height: 60%;
-                    width: 60%;
+                    height: 80%;
+                    width: 80%;
                 }
                
             }

@@ -11,22 +11,16 @@
     <title>Adam Hood</title>
 
     <script>
-        function openNav() {
-            document.getElementById('mySideNav').style.width = "100px";
-        }
-
-        function closeNav() {
-            document.getElementById('mySideNav').style.width = "0px";
-        }
+        
     </script>
 </head>
 
 <body>
         <header class="header-container">
             <!-- Navigation Buttons -->
-            <nav class="openSidenav" onclick="openNav()">☰</nav>
+            <nav class="openSidenav">☰</nav>
             <nav id="mySideNav" class="sidenav">
-                    <a class="closebtn" onclick="closeNav()">&times;</a>
+                    <a class="closebtn" >&times;</a>
                     <a href="#home-a">Home</a>
                     <a href="#about-a">About</a>
                     <a href="#projects-a">Projects</a>
@@ -35,10 +29,12 @@
             </nav>
         </header>
 
+<div class="wrapper">
+        <div class="main">
     <main>
        <div id="main">
         <section class="home" id="home-a">
-            <h1 class="text-4xl">Hi, I'm Adam <br> Welcome to my portfolio.</h1>
+            <h1>Hi, I'm Adam <br> Welcome to my portfolio.</h1>
             <p>I love designing responsive, creative, and intelligent web applications.
                 Let me show you some of my work.
             </p>
@@ -79,7 +75,7 @@
         <!-- Project Section -->
         <section class="projects" id="projects-a">
             <div class="project-card">
-                <h2 class="projects-h2">Projects</h2>
+                <h2 id='project-title' class="projects-h2">Projects</h2>
                 <!-- Can add images and links to a tags when ready -->
                 <div id="project-1">
                     <div class="project-1-text">
@@ -145,7 +141,7 @@
         <hr>
 
         <section class="contact" id="contact-a">
-            <form class="contact-form" action="https://formsubmit.co/f217d247b3456a42da00ad3d935aaacd" method="POST">
+            <form class="contact-form" action="https://formsubmit.co/adamhood3700@gmail.com" method="POST">
                     <!--I created lots of containers so that I could control
                     the spacing with flexbox -->
                     <div class="h2-container">
@@ -161,27 +157,29 @@
                     </div>
                     <div class="contact-row">
                         <p>Message: </p>
-                        <input class="message-input" type="text">
+                        <input class="message-input" name="message" type="text">
                     </div>
                     <div class="contact-row">
-                       <button class="submit-button" type="submit" value="Send">Send</button>
+                       <button class="submit-button" name="submit" type="submit" value="Send">Send</button>
                     </div>
                     <input type="hidden" name="_next" value="https://adamhood15.github.io/thankyou.html">
             </form>
         </section>
     </main>
-
-    <footer class="footer-container">
-        <!-- All of my contact information is displayed in these links -->
-        <div class="icon-container">
-            <a href="https://www.linkedin.com/in/adam-c-hood/" target="_blank"><i class="fa-brands fa-linkedin-in"></i>
-            <a href="https://github.com/adamhood15" target="_blank"><i class="fa-brands fa-github"></i>
-            <a href="https://twitter.com/AdamHood171992" target="_blank"><i class="fa-brands fa-twitter"></i>
-            <a href="mailto:adamhood3700@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i>
-        </div>
-    </footer>
+    </div>
+    <div class="sidebar">
+        <a href="https://www.linkedin.com/in/adam-c-hood/" target="_blank"><i class="icon fa-brands fa-linkedin-in"></i>
+        <hr class="hr">
+        <a href="https://github.com/adamhood15" target="_blank"><i class="icon fa-brands fa-github"></i>
+        <hr class="hr">
+        <a href="https://twitter.com/AdamHood171992" target="_blank"><i class="icon fa-brands fa-twitter"></i>
+        <hr class="hr">
+        <a href="mailto:adamhood3700@gmail.com" target="_blank"><i class="icon fa-solid fa-envelope"></i>
+        <hr class="hr">
+    </div>
+</div>
 
 </div> 
-    <script href="./script.js"></script> 
+    <script src="./script.js"></script> 
 </body>
 </html>
